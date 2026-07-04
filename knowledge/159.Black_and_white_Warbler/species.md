@@ -1,69 +1,76 @@
-# 159.Black and white Warbler
+# Black and White Warbler
 
-## Basic Information
-Scientific Name:
-Family:
-Order:
-
----
-
-## Identification
-Average Length:
-Average Wingspan:
-Average Weight:
-Male vs Female Differences:
-Distinctive Features:
+## Basic Information  
+Scientific Name: Mniotilta varia  
+Family: Parulidae  
+Order: Passeriformes  
 
 ---
 
-## Habitat
+## Identification  
+Average Length: 11–12 cm  
+Average Wingspan: 16–18 cm  
+Average Weight: 9–13 g  
+Male vs Female Differences: Sexes are similar; males may have slightly more pronounced black stripes.  
+Distinctive Features: Striking black-and-white striped plumage; climbs vertically on trees like a nuthatch.  
 
 ---
 
-## Geographic Distribution
+## Habitat  
+Breeds in deciduous or mixed forests with mature trees; winters in tropical forests and second-growth habitats.  
 
 ---
 
-## Migration
-Migratory Status:
-Migration Pattern:
+## Geographic Distribution  
+Breeding range spans eastern North America, from southern Canada to the northeastern United States. Winters in Central America, the Caribbean, and northern South America.  
 
 ---
 
-## Diet
+## Migration  
+Migratory Status: Migratory  
+Migration Pattern: Long-distance migrant, traveling from North America to Central America and the Caribbean.  
 
 ---
 
-## Behaviour
+## Diet  
+Insects, including beetles, caterpillars, and spiders, foraged on tree trunks and branches.  
 
 ---
 
-## Vocalization
+## Behaviour  
+Climbs vertically on trees and shrubs, often headfirst, searching for insects. Active and agile, often found in mixed-species flocks during migration.  
 
 ---
 
-## Breeding
+## Vocalization  
+Song: A high-pitched, rapid trill or series of "chit" notes. Call: A sharp, metallic "chink" sound.  
 
 ---
 
-## Conservation
-IUCN Status:
-Threats:
+## Breeding  
+Nests in trees, typically in a shallow cup of bark strips and plant fibers. Clutch size: 3–5 eggs. Incubation lasts 12–14 days, shared by both parents.  
 
 ---
 
-## Ecological Importance
+## Conservation  
+IUCN Status: Least Concern  
+Threats: Habitat loss in breeding and wintering grounds; pesticide use reducing insect prey.  
 
 ---
 
-## Interesting Facts
-- Fact 1
-- Fact 2
-- Fact 3
+## Ecological Importance  
+Controls insect populations in forest ecosystems. Serves as prey for larger birds and mammals.  
 
 ---
 
-## References
-- Wikipedia
-- Cornell Lab of Ornithology
-- BirdLife International
+## Interesting Facts  
+- Climbs trees vertically, a behavior unique among warblers.  
+- Males and females share parental duties, including feeding nestlings.  
+- Known for its distinctive black-and-white plumage, making it easily identifiable.  
+
+---
+
+## References  
+- Wikipedia – Black and White Warbler  
+- Cornell Lab of Ornithology – Black and White Warbler  
+- BirdLife International – Black and White Warbler

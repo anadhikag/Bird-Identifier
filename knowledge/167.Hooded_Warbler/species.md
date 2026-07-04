@@ -1,69 +1,76 @@
-# 167.Hooded Warbler
+# Hooded Warbler
 
-## Basic Information
-Scientific Name:
-Family:
-Order:
-
----
-
-## Identification
-Average Length:
-Average Wingspan:
-Average Weight:
-Male vs Female Differences:
-Distinctive Features:
+## Basic Information  
+Scientific Name: Setophaga citrina  
+Family: Parulidae  
+Order: Passeriformes  
 
 ---
 
-## Habitat
+## Identification  
+Average Length: 12–14 cm  
+Average Wingspan: 19–21 cm  
+Average Weight: 9–12 g  
+Male vs Female Differences: Males have a black hood and yellow throat; females have a gray hood and less distinct markings.  
+Distinctive Features: Black hood in males, yellow throat, and olive upperparts.  
 
 ---
 
-## Geographic Distribution
+## Habitat  
+Dense deciduous or mixed forests with understory vegetation, often near streams or wetlands.  
 
 ---
 
-## Migration
-Migratory Status:
-Migration Pattern:
+## Geographic Distribution  
+Breeds in eastern North America from southeastern Canada to the eastern United States. Winters in Central America (Honduras to Panama) and northern South America (Colombia).  
 
 ---
 
-## Diet
+## Migration  
+Migratory Status: Migratory  
+Migration Pattern: Long-distance migration; travels to Central America for winter.  
 
 ---
 
-## Behaviour
+## Diet  
+Insects, including caterpillars, beetles, flies, and spiders. Forages in the understory by gleaning insects from leaves.  
 
 ---
 
-## Vocalization
+## Behaviour  
+Active and secretive, often foraging low in dense vegetation. Territorial during breeding season; sings from perches to defend territory.  
 
 ---
 
-## Breeding
+## Vocalization  
+Song: A clear, whistled "wee-see-you" or "wee-see-see-you." Call: A sharp "tik."  
 
 ---
 
-## Conservation
-IUCN Status:
-Threats:
+## Breeding  
+Monogamous. Builds a cup-shaped nest on the ground or low in shrubs, made of twigs, leaves, and moss. Clutch size: 3–4 eggs. Incubation lasts 12–14 days. Both parents feed nestlings. May raise two broods per season.  
 
 ---
 
-## Ecological Importance
+## Conservation  
+IUCN Status: Least Concern  
+Threats: Habitat loss from deforestation in breeding and wintering ranges, pesticide use, and collisions with buildings during migration.  
 
 ---
 
-## Interesting Facts
-- Fact 1
-- Fact 2
-- Fact 3
+## Ecological Importance  
+Helps control insect populations in both breeding and wintering habitats. Connects ecosystems through long-distance migration.  
 
 ---
 
-## References
-- Wikipedia
-- Cornell Lab of Ornithology
-- BirdLife International
+## Interesting Facts  
+- Males sing from high perches to defend territory.  
+- Nests are often hidden in dense undergrowth to avoid predators.  
+- Migrates up to 3,000 km between breeding and wintering grounds.  
+
+---
+
+## References  
+- Wikipedia – Hooded Warbler  
+- Cornell Lab of Ornithology – Hooded Warbler  
+- BirdLife International – Hooded Warbler

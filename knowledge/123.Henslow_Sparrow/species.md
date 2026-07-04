@@ -1,69 +1,76 @@
-# 123.Henslow Sparrow
+# Henslow's Sparrow
 
-## Basic Information
-Scientific Name:
-Family:
-Order:
-
----
-
-## Identification
-Average Length:
-Average Wingspan:
-Average Weight:
-Male vs Female Differences:
-Distinctive Features:
+## Basic Information  
+Scientific Name: Passerculus henslowii  
+Family: Passerellidae  
+Order: Passeriformes  
 
 ---
 
-## Habitat
+## Identification  
+Average Length: 12–13 cm  
+Average Wingspan: 18–20 cm  
+Average Weight: 12–14 g  
+Male vs Female Differences: Males have a darker crown and more pronounced eye line; females are slightly paler.  
+Distinctive Features: Yellow crown, dark eye line, white throat, and streaked brown back.  
 
 ---
 
-## Geographic Distribution
+## Habitat  
+Native to tallgrass prairies, wet meadows, and marshy grasslands. Prefers dense, tall vegetation for nesting.  
 
 ---
 
-## Migration
-Migratory Status:
-Migration Pattern:
+## Geographic Distribution  
+Breeds in the central United States (e.g., Minnesota, Wisconsin, Iowa). Winters in the southeastern U.S. (e.g., Florida, Georgia).  
 
 ---
 
-## Diet
+## Migration  
+Migratory Status: Migratory  
+Migration Pattern: Travels from Midwestern breeding grounds to the southeastern U.S. for winter.  
 
 ---
 
-## Behaviour
+## Diet  
+Seeds, insects, and spiders. Forages on the ground and in low vegetation.  
 
 ---
 
-## Vocalization
+## Behaviour  
+Shy and elusive, often hidden in dense cover. Builds ground nests and is solitary outside the breeding season.  
 
 ---
 
-## Breeding
+## Vocalization  
+Song consists of a short, high-pitched trill or a series of rapid, chipping notes.  
 
 ---
 
-## Conservation
-IUCN Status:
-Threats:
+## Breeding  
+Lays 3–4 eggs per clutch. Incubation lasts 11–13 days, shared by both parents. Nests are built on the ground using grasses and twigs.  
 
 ---
 
-## Ecological Importance
+## Conservation  
+IUCN Status: Vulnerable  
+Threats: Habitat loss due to agriculture, urban development, and wetland drainage.  
 
 ---
 
-## Interesting Facts
-- Fact 1
-- Fact 2
-- Fact 3
+## Ecological Importance  
+Controls insect populations and aids in seed dispersal. Indicator species for healthy grassland ecosystems.  
 
 ---
 
-## References
-- Wikipedia
-- Cornell Lab of Ornithology
-- BirdLife International
+## Interesting Facts  
+- One of the most endangered sparrows in North America.  
+- Requires specific tallgrass habitats, making it sensitive to land-use changes.  
+- Males perform flight displays during courtship.  
+
+---
+
+## References  
+- Wikipedia – Henslow's Sparrow  
+- Cornell Lab of Ornithology – Henslow's Sparrow  
+- BirdLife International – Henslow's Sparrow

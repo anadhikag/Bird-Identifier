@@ -1,69 +1,76 @@
-# 196.House Wren
+# House Wren
 
 ## Basic Information
-Scientific Name:
-Family:
-Order:
+Scientific Name: Troglodytes aedon  
+Family: Troglodytidae  
+Order: Passeriformes  
 
 ---
 
 ## Identification
-Average Length:
-Average Wingspan:
-Average Weight:
-Male vs Female Differences:
-Distinctive Features:
+Average Length: 10–12 cm  
+Average Wingspan: 12–15 cm  
+Average Weight: 10–14 g  
+Male vs Female Differences: Little sexual dimorphism; males may be slightly larger.  
+Distinctive Features: Brown upperparts, white underparts with faint streaks, long thin bill, and a short tail.  
 
 ---
 
-## Habitat
+## Habitat  
+Open woodlands, gardens, shrublands, and suburban areas. Nests in tree cavities, nest boxes, or abandoned structures.  
 
 ---
 
-## Geographic Distribution
+## Geographic Distribution  
+Breeds across North America (southern Canada to northern South America), the Caribbean, and parts of Central America. Winters in the southern United States, Mexico, and northern South America.  
 
 ---
 
-## Migration
-Migratory Status:
-Migration Pattern:
+## Migration  
+Migratory Status: Migratory  
+Migration Pattern: Long-distance migration; northern populations travel to tropical regions for winter.  
 
 ---
 
-## Diet
+## Diet  
+Insects, spiders, and other arthropods during breeding season; berries and seeds in winter.  
 
 ---
 
-## Behaviour
+## Behaviour  
+Active and inquisitive, often seen flitting through foliage. Builds elaborate nests but may construct multiple abandoned ones. Territorial and vocal, especially during breeding.  
 
 ---
 
-## Vocalization
+## Vocalization  
+Song: A varied, musical series of notes with a trilling quality. Call: Sharp "tik" or "chit" sounds.  
 
 ---
 
-## Breeding
+## Breeding  
+Clutch size: 3–7 eggs. Incubation: 14–16 days (primarily by the female). Nestlings fledge at 12–16 days. Nests in cavities, including old woodpecker holes or human-made structures.  
 
 ---
 
-## Conservation
-IUCN Status:
-Threats:
+## Conservation  
+IUCN Status: Least Concern  
+Threats: Habitat loss, competition with invasive species (e.g., House Sparrows), and nest site scarcity.  
 
 ---
 
-## Ecological Importance
+## Ecological Importance  
+Controls insect populations in gardens and forests. Contributes to seed dispersal through berry consumption.  
 
 ---
 
-## Interesting Facts
-- Fact 1
-- Fact 2
-- Fact 3
+## Interesting Facts  
+- Builds multiple "dummy" nests before selecting a breeding site.  
+- Males sing complex songs to attract mates and defend territory.  
+- Known to nest in unconventional cavities, including mailboxes and fence posts.  
 
 ---
 
-## References
-- Wikipedia
-- Cornell Lab of Ornithology
-- BirdLife International
+## References  
+- Wikipedia – House Wren  
+- Cornell Lab of Ornithology – House Wren  
+- BirdLife International – House Wren

@@ -1,69 +1,76 @@
-# 077.Tropical Kingbird
+# Tropical Kingbird
 
-## Basic Information
-Scientific Name:
-Family:
-Order:
-
----
-
-## Identification
-Average Length:
-Average Wingspan:
-Average Weight:
-Male vs Female Differences:
-Distinctive Features:
+## Basic Information  
+Scientific Name: Tyrannus melancholicus  
+Family: Tyrannidae  
+Order: Passeriformes  
 
 ---
 
-## Habitat
+## Identification  
+Average Length: 20–23 cm  
+Average Wingspan: 35–40 cm  
+Average Weight: 30–45 g  
+Male vs Female Differences: Males and females are similar in appearance, though males may have a slightly more pronounced black facial mask.  
+Distinctive Features: Black head and back, yellow underparts, and a long, graduated tail.  
 
 ---
 
-## Geographic Distribution
+## Habitat  
+Open habitats such as savannas, pastures, forest edges, and urban areas with scattered trees.  
 
 ---
 
-## Migration
-Migratory Status:
-Migration Pattern:
+## Geographic Distribution  
+Found from southern Mexico through Central America to northern Argentina.  
 
 ---
 
-## Diet
+## Migration  
+Migratory Status: Partially migratory.  
+Migration Pattern: Some populations are resident year-round, while others migrate seasonally between breeding and non-breeding ranges.  
 
 ---
 
-## Behaviour
+## Diet  
+Insects, primarily caught in flight, including beetles, flies, and moths.  
 
 ---
 
-## Vocalization
+## Behaviour  
+Territorial and solitary, often perching conspicuously on wires or branches. Fliescatching behaviour, with agile aerial sallies to capture prey.  
 
 ---
 
-## Breeding
+## Vocalization  
+A sharp, metallic "pip" call and a melodious, whistled song with varied notes.  
 
 ---
 
-## Conservation
-IUCN Status:
-Threats:
+## Breeding  
+Nests in trees or on man-made structures like buildings or poles. Clutch size is typically 2–3 eggs. Incubation lasts 14–16 days, shared by both parents.  
 
 ---
 
-## Ecological Importance
+## Conservation  
+IUCN Status: Least Concern  
+Threats: Habitat loss due to deforestation and agricultural expansion.  
 
 ---
 
-## Interesting Facts
-- Fact 1
-- Fact 2
-- Fact 3
+## Ecological Importance  
+Helps control insect populations, particularly in agricultural and urban areas.  
 
 ---
 
-## References
-- Wikipedia
-- Cornell Lab of Ornithology
-- BirdLife International
+## Interesting Facts  
+- Often perches upright on exposed perches to survey surroundings.  
+- Known to mimic the calls of other bird species.  
+- Adapts well to human-modified landscapes, including cities and farmlands.  
+
+---
+
+## References  
+- Wikipedia – Tropical Kingbird  
+- Cornell Lab of Ornithology – Tropical Kingbird  
+- BirdLife International – Tropical Kingbird

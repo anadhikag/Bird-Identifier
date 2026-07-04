@@ -1,69 +1,76 @@
-# 072.Pomarine Jaeger
+# Pomarine Jaeger
 
-## Basic Information
-Scientific Name:
-Family:
-Order:
-
----
-
-## Identification
-Average Length:
-Average Wingspan:
-Average Weight:
-Male vs Female Differences:
-Distinctive Features:
+## Basic Information  
+Scientific Name: Stercorarius pomarinus  
+Family: Stercorariidae  
+Order: Charadriiformes  
 
 ---
 
-## Habitat
+## Identification  
+Average Length: 45–55 cm  
+Average Wingspan: 115–130 cm  
+Average Weight: 500–1000 g  
+Male vs Female Differences: Males are slightly smaller and more slender than females.  
+Distinctive Features: Long, hooked bill; dark plumage with a pale head in adults; long central tail feather in breeding males.  
 
 ---
 
-## Geographic Distribution
+## Habitat  
+Breeds in Arctic tundra and coastal areas; winters in open oceans and temperate coasts.  
 
 ---
 
-## Migration
-Migratory Status:
-Migration Pattern:
+## Geographic Distribution  
+Breeds in Arctic regions of North America (Alaska to Greenland) and Eurasia (Siberia). Winters in tropical and subtropical oceans globally.  
 
 ---
 
-## Diet
+## Migration  
+Migratory Status: Migratory  
+Migration Pattern: Long-distance migrant, traveling from Arctic breeding grounds to southern hemisphere oceans, often following coastlines.  
 
 ---
 
-## Behaviour
+## Diet  
+Primarily feeds on fish, scavenges carrion, and kleptoparasitizes other seabirds.  
 
 ---
 
-## Vocalization
+## Behaviour  
+Highly agile and aggressive in flight; often harasses gulls and terns to steal food. Non-breeding individuals form loose flocks at sea.  
 
 ---
 
-## Breeding
+## Vocalization  
+Emits sharp, croaking calls during breeding season and softer grunts while foraging.  
 
 ---
 
-## Conservation
-IUCN Status:
-Threats:
+## Breeding  
+Nests on ground in Arctic tundra, laying a single egg. Both parents share incubation and chick-rearing duties.  
 
 ---
 
-## Ecological Importance
+## Conservation  
+IUCN Status: Least Concern  
+Threats: Habitat loss from climate change, oil spills, and human disturbance in breeding areas.  
 
 ---
 
-## Interesting Facts
-- Fact 1
-- Fact 2
-- Fact 3
+## Ecological Importance  
+Regulates fish populations and scavenges marine carcasses, aiding nutrient cycling in coastal ecosystems.  
 
 ---
 
-## References
-- Wikipedia
-- Cornell Lab of Ornithology
-- BirdLife International
+## Interesting Facts  
+- Migrates farther than any other bird, with some individuals traveling over 16,000 km annually.  
+- Can glide for hours using thermals and wind currents to conserve energy.  
+- Juveniles often mimic adult plumage to deter predators.  
+
+---
+
+## References  
+- Wikipedia – Pomarine Jaeger  
+- Cornell Lab of Ornithology – Pomarine Jaeger  
+- BirdLife International – Pomarine Jaeger

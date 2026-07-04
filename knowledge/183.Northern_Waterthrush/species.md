@@ -1,69 +1,76 @@
-# 183.Northern Waterthrush
+# Northern Waterthrush
 
-## Basic Information
-Scientific Name:
-Family:
-Order:
-
----
-
-## Identification
-Average Length:
-Average Wingspan:
-Average Weight:
-Male vs Female Differences:
-Distinctive Features:
+## Basic Information  
+Scientific Name: Parkesia noveboracensis  
+Family: Parulidae  
+Order: Passeriformes  
 
 ---
 
-## Habitat
+## Identification  
+Average Length: 14–16 cm  
+Average Wingspan: 21–24 cm  
+Average Weight: 18–25 g  
+Male vs Female Differences: Males and females are similar in appearance, though males may exhibit slightly brighter plumage during breeding season.  
+Distinctive Features: White eye ring, dark streaks on the back and flanks, and a long, slightly rounded tail.  
 
 ---
 
-## Geographic Distribution
+## Habitat  
+Breeds in wetlands, including slow-moving streams, swamps, and forested wetlands. During migration and winter, inhabits a variety of habitats, including shrublands and second-growth forests.  
 
 ---
 
-## Migration
-Migratory Status:
-Migration Pattern:
+## Geographic Distribution  
+Breeding range spans eastern North America, from southern Canada to the northeastern United States. Winters in the Caribbean, Central America, and northern South America.  
 
 ---
 
-## Diet
+## Migration  
+Migratory Status: Migratory  
+Migration Pattern: Long-distance migrant, traveling from breeding grounds to tropical wintering areas in the Caribbean and Central America.  
 
 ---
 
-## Behaviour
+## Diet  
+Primarily insects and other invertebrates, foraged on the ground or in shallow water. May also consume small fruits during migration.  
 
 ---
 
-## Vocalization
+## Behaviour  
+Forages by running and pausing, often near water. Known for its tail-wagging motion. Bathes frequently in shallow water.  
 
 ---
 
-## Breeding
+## Vocalization  
+Song consists of a series of clear, whistled notes, often described as a repetitive "teach-er, teach-er" phrase. Calls include sharp, high-pitched chips.  
 
 ---
 
-## Conservation
-IUCN Status:
-Threats:
+## Breeding  
+Nests are built in shrubs or on the ground near water. Clutch size is typically 3–4 eggs. Incubation lasts 12–14 days, primarily by the female.  
 
 ---
 
-## Ecological Importance
+## Conservation  
+IUCN Status: Least Concern  
+Threats: Habitat loss in breeding and wintering grounds, and during migration.  
 
 ---
 
-## Interesting Facts
-- Fact 1
-- Fact 2
-- Fact 3
+## Ecological Importance  
+Plays a role in controlling insect populations and serves as an indicator species for wetland health.  
 
 ---
 
-## References
-- Wikipedia
-- Cornell Lab of Ornithology
-- BirdLife International
+## Interesting Facts  
+- Known for its distinctive tail-wagging behavior while foraging.  
+- Often mistaken for the Louisiana Waterthrush, but distinguished by its white eye ring.  
+- Uses loud, clear songs to communicate in dense, noisy habitats.  
+
+---
+
+## References  
+- Wikipedia – Northern Waterthrush  
+- Cornell Lab of Ornithology – Northern Waterthrush  
+- BirdLife International – Northern Waterthrush

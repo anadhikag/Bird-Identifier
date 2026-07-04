@@ -1,69 +1,76 @@
-# 121.Grasshopper Sparrow
+# Grasshopper Sparrow
 
-## Basic Information
-Scientific Name:
-Family:
-Order:
-
----
-
-## Identification
-Average Length:
-Average Wingspan:
-Average Weight:
-Male vs Female Differences:
-Distinctive Features:
+## Basic Information  
+Scientific Name: Ammodramus savannarum  
+Family: Passerellidae  
+Order: Passeriformes  
 
 ---
 
-## Habitat
+## Identification  
+Average Length: 12–14 cm  
+Average Wingspan: 18–21 cm  
+Average Weight: 14–18 g  
+Male vs Female Differences: Males have a more distinct black throat patch and a brighter yellow crown.  
+Distinctive Features: Black mustache stripe, yellow crown patch, and streaked brown back.  
 
 ---
 
-## Geographic Distribution
+## Habitat  
+Open grasslands, prairies, and savannas. Prefers areas with low vegetation and sparse tree cover.  
 
 ---
 
-## Migration
-Migratory Status:
-Migration Pattern:
+## Geographic Distribution  
+Breeds across central North America, from southern Canada to the central United States. Winters in the southern U.S., Mexico, and Central America.  
 
 ---
 
-## Diet
+## Migration  
+Migratory Status: Migratory  
+Migration Pattern: Long-distance migration; travels from breeding grounds in North America to wintering areas in the southern U.S., Mexico, and Central America.  
 
 ---
 
-## Behaviour
+## Diet  
+Insects (grasshoppers, beetles, caterpillars) during breeding season; seeds and grains in winter.  
 
 ---
 
-## Vocalization
+## Behaviour  
+Ground-foraging and skulking; often hidden in vegetation. Solitary or in small groups. Active during the day.  
 
 ---
 
-## Breeding
+## Vocalization  
+Song: A series of short, buzzy notes, often described as "chink" or "tink." Calls: Sharp, high-pitched "tseep" or "chirp."  
 
 ---
 
-## Conservation
-IUCN Status:
-Threats:
+## Breeding  
+Ground-nester; builds a cup-shaped nest in dense grass. Clutch size: 3–5 eggs. Incubation: 11–13 days, primarily by the female. Both parents feed nestlings.  
 
 ---
 
-## Ecological Importance
+## Conservation  
+IUCN Status: Least Concern  
+Threats: Habitat loss due to agricultural expansion, urban development, and pesticide use.  
 
 ---
 
-## Interesting Facts
-- Fact 1
-- Fact 2
-- Fact 3
+## Ecological Importance  
+Controls insect populations and serves as an indicator species for grassland ecosystem health.  
 
 ---
 
-## References
-- Wikipedia
-- Cornell Lab of Ornithology
-- BirdLife International
+## Interesting Facts  
+- Males perform a "flight song" while perched or in short flights during courtship.  
+- Nests are often hidden in tall grass to avoid predators.  
+- Declines in population correlate with the loss of native grasslands.  
+
+---
+
+## References  
+- Wikipedia – Grasshopper Sparrow  
+- Cornell Lab of Ornithology – Grasshopper Sparrow  
+- BirdLife International – Grasshopper Sparrow

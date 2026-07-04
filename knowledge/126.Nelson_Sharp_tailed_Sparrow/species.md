@@ -1,69 +1,76 @@
-# 126.Nelson Sharp tailed Sparrow
+# Nelson's Sharp-tailed Sparrow
 
-## Basic Information
-Scientific Name:
-Family:
-Order:
-
----
-
-## Identification
-Average Length:
-Average Wingspan:
-Average Weight:
-Male vs Female Differences:
-Distinctive Features:
+## Basic Information  
+Scientific Name: Ammodramus nelsoni  
+Family: Emberizidae  
+Order: Passeriformes  
 
 ---
 
-## Habitat
+## Identification  
+Average Length: 12–14 cm  
+Average Wingspan: 18–20 cm  
+Average Weight: 12–16 g  
+Male vs Female Differences: Males have slightly more pronounced streaking on the breast and a bolder eye line during breeding season.  
+Distinctive Features: Sharp, pointed tail; dark eye line; streaked underparts; buffy supercilium.  
 
 ---
 
-## Geographic Distribution
+## Habitat  
+Salt marshes, coastal grasslands, and brackish wetlands with dense vegetation.  
 
 ---
 
-## Migration
-Migratory Status:
-Migration Pattern:
+## Geographic Distribution  
+Southeastern United States, primarily Florida, Georgia, and South Carolina, with isolated populations in the Gulf Coast.  
 
 ---
 
-## Diet
+## Migration  
+Migratory Status: Partial migrant  
+Migration Pattern: Some populations migrate short distances; others are year-round residents in coastal regions.  
 
 ---
 
-## Behaviour
+## Diet  
+Insects (especially during breeding season), seeds, and aquatic invertebrates.  
 
 ---
 
-## Vocalization
+## Behaviour  
+Skulks through dense marsh vegetation; forages by scratching the ground with both feet. Shy and elusive, often detected by sound.  
 
 ---
 
-## Breeding
+## Vocalization  
+Song: A series of clear, whistled notes ("weet-wee-wee-wee"). Call: Sharp, high-pitched "chip."  
 
 ---
 
-## Conservation
-IUCN Status:
-Threats:
+## Breeding  
+Nests on the ground in marsh vegetation. Clutch size: 3–4 eggs. Incubation period: 12 days. Both parents feed nestlings.  
 
 ---
 
-## Ecological Importance
+## Conservation  
+IUCN Status: Least Concern  
+Threats: Habitat loss from coastal development, sea-level rise, and salt marsh degradation.  
 
 ---
 
-## Interesting Facts
-- Fact 1
-- Fact 2
-- Fact 3
+## Ecological Importance  
+Controls insect populations and serves as an indicator species for wetland health.  
 
 ---
 
-## References
-- Wikipedia
-- Cornell Lab of Ornithology
-- BirdLife International
+## Interesting Facts  
+- Prefers high-salinity marshes with smooth cordgrass (*Spartina alterniflora*).  
+- Nests are built above high-tide levels to avoid flooding.  
+- Often mistaken for the Saltmarsh Sparrow due to similar habitats.  
+
+---
+
+## References  
+- Wikipedia – Nelson's Sharp-tailed Sparrow  
+- Cornell Lab of Ornithology – Nelson's Sharp-tailed Sparrow  
+- BirdLife International – Nelson's Sharp-tailed Sparrow

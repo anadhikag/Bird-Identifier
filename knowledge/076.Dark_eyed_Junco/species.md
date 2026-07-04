@@ -1,69 +1,76 @@
-# 076.Dark eyed Junco
+# Dark-eyed Junco
 
-## Basic Information
-Scientific Name:
-Family:
-Order:
-
----
-
-## Identification
-Average Length:
-Average Wingspan:
-Average Weight:
-Male vs Female Differences:
-Distinctive Features:
+## Basic Information  
+Scientific Name: Phaeonotria maculifrons  
+Family: Passerellidae  
+Order: Passeriformes  
 
 ---
 
-## Habitat
+## Identification  
+Average Length: 12–15 cm  
+Average Wingspan: 18–22 cm  
+Average Weight: 14–21 g  
+Male vs Female Differences: Males have a more distinct dark hood and breast; females are paler with less contrast between head and back.  
+Distinctive Features: Dark hood and upperparts, white belly, pink bill, and a white outer tail feather visible in flight.  
 
 ---
 
-## Geographic Distribution
+## Habitat  
+Open woodlands, forest edges, suburban gardens, and brushy areas. Prefers habitats with dense undergrowth for nesting.  
 
 ---
 
-## Migration
-Migratory Status:
-Migration Pattern:
+## Geographic Distribution  
+Breeds across Canada and the northern United States; winters in the southern United States, Mexico, and the Caribbean.  
 
 ---
 
-## Diet
+## Migration  
+Migratory Status: Partial migrant.  
+Migration Pattern: Northern populations migrate southward in autumn; some populations remain year-round in milder regions.  
 
 ---
 
-## Behaviour
+## Diet  
+Primarily seeds, supplemented with insects and spiders during the breeding season. Forages on the ground.  
 
 ---
 
-## Vocalization
+## Behaviour  
+Social and active, often seen in flocks outside the breeding season. Displays a characteristic "hopping" gait while foraging.  
 
 ---
 
-## Breeding
+## Vocalization  
+Song: A clear, trilling "fee-bee-bee-bee" or "fee-fee-fee-bee-bee-bee." Call: A sharp "chip" or "tseet."  
 
 ---
 
-## Conservation
-IUCN Status:
-Threats:
+## Breeding  
+Nests on the ground or in low shrubs. Clutch size: 3–5 eggs. Incubation: 12–13 days by the female. Both parents feed nestlings.  
 
 ---
 
-## Ecological Importance
+## Conservation  
+IUCN Status: Least Concern  
+Threats: Habitat loss due to deforestation and urbanization.  
 
 ---
 
-## Interesting Facts
-- Fact 1
-- Fact 2
-- Fact 3
+## Ecological Importance  
+Seeds dispersers and insect controllers. Provide food for predators such as hawks and snakes.  
 
 ---
 
-## References
-- Wikipedia
-- Cornell Lab of Ornithology
-- BirdLife International
+## Interesting Facts  
+- The "pink-sided" and "slate-colored" morphs are the most common subspecies in North America.  
+- Frequently visits backyard feeders in winter, especially in northern regions.  
+- Studied extensively in behavioral ecology due to their adaptability and year-round presence in some areas.  
+
+---
+
+## References  
+- Wikipedia – Dark-eyed Junco  
+- Cornell Lab of Ornithology – Dark-eyed Junco  
+- BirdLife International – Dark-eyed Junco

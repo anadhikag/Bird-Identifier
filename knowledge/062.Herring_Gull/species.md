@@ -1,69 +1,76 @@
-# 062.Herring Gull
+# Herring Gull
 
-## Basic Information
-Scientific Name:
-Family:
-Order:
-
----
-
-## Identification
-Average Length:
-Average Wingspan:
-Average Weight:
-Male vs Female Differences:
-Distinctive Features:
+## Basic Information  
+Scientific Name: Larus argentatus  
+Family: Laridae  
+Order: Charadriiformes  
 
 ---
 
-## Habitat
+## Identification  
+Average Length: 60–65 cm  
+Average Wingspan: 140–170 cm  
+Average Weight: 1.1–2.3 kg  
+Male vs Female Differences: Slightly larger males; otherwise similar plumage  
+Distinctive Features: Yellow bill with red spot, white body, gray back, black wingtips with white spots  
 
 ---
 
-## Geographic Distribution
+## Habitat  
+Coastal areas including beaches, estuaries, and urban environments; also found near inland lakes and landfills.  
 
 ---
 
-## Migration
-Migratory Status:
-Migration Pattern:
+## Geographic Distribution  
+Widespread across the Northern Hemisphere, breeding in North America, Europe, and Asia; winters in coastal regions of the southern U.S., Mediterranean, and North Africa.  
 
 ---
 
-## Diet
+## Migration  
+Migratory Status: Partial migrant  
+Migration Pattern: Northern populations migrate south for winter; some remain in milder climates year-round.  
 
 ---
 
-## Behaviour
+## Diet  
+Opportunistic feeder: fish, crustaceans, insects, scavenged food, and human refuse.  
 
 ---
 
-## Vocalization
+## Behaviour  
+Social and gregarious; often seen in flocks. Aggressive during nesting and food acquisition; bold around humans.  
 
 ---
 
-## Breeding
+## Vocalization  
+Loud, harsh "kraa" calls; softer coos during courtship.  
 
 ---
 
-## Conservation
-IUCN Status:
-Threats:
+## Breeding  
+Nests on cliffs, islands, or urban structures. Clutch size: 2–3 eggs. Incubation: 28–32 days. Both parents feed chicks.  
 
 ---
 
-## Ecological Importance
+## Conservation  
+IUCN Status: Least Concern  
+Threats: Habitat loss, pollution, and human disturbance. Some populations declining due to plastic ingestion and overfishing.  
 
 ---
 
-## Interesting Facts
-- Fact 1
-- Fact 2
-- Fact 3
+## Ecological Importance  
+Scavenges waste, reducing disease risk. Preys on invertebrates, balancing coastal ecosystems. Indicator species for environmental health.  
 
 ---
 
-## References
-- Wikipedia
-- Cornell Lab of Ornithology
-- BirdLife International
+## Interesting Facts  
+- Can live over 40 years in captivity.  
+- Known for kleptoparasitism (stealing food from other birds).  
+- Eggs have highly variable, cryptic patterns to deter predators.  
+
+---
+
+## References  
+- Wikipedia – Herring Gull  
+- Cornell Lab of Ornithology – Herring Gull  
+- BirdLife International – Herring Gull

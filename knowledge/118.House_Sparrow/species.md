@@ -1,69 +1,76 @@
-# 118.House Sparrow
+# House Sparrow
 
-## Basic Information
-Scientific Name:
-Family:
-Order:
-
----
-
-## Identification
-Average Length:
-Average Wingspan:
-Average Weight:
-Male vs Female Differences:
-Distinctive Features:
+## Basic Information  
+Scientific Name: Passer domesticus  
+Family: Passeridae  
+Order: Passeriformes  
 
 ---
 
-## Habitat
+## Identification  
+Average Length: 14–16 cm  
+Average Wingspan: 18–22 cm  
+Average Weight: 24–39.5 g  
+Male vs Female Differences: Males have a black bib, chestnut cap, and gray face; females are more uniformly brown with no black markings.  
+Distinctive Features: Small, plump body; short tail; conical beak; male’s black throat patch.  
 
 ---
 
-## Geographic Distribution
+## Habitat  
+Urban and suburban areas, farmlands, gardens, and open woodlands. Avoids dense forests.  
 
 ---
 
-## Migration
-Migratory Status:
-Migration Pattern:
+## Geographic Distribution  
+Native to Europe, Asia, and North Africa. Introduced to the Americas, Australia, New Zealand, and South Africa.  
 
 ---
 
-## Diet
+## Migration  
+Migratory Status: Partial migrant  
+Migration Pattern: Most populations are sedentary; some northern populations migrate short distances in winter.  
 
 ---
 
-## Behaviour
+## Diet  
+Omnivorous. Feeds on seeds, grains, insects, and human food scraps.  
 
 ---
 
-## Vocalization
+## Behaviour  
+Highly social, often seen in flocks. Ground-foraging, nests in cavities (buildings, trees, nest boxes). Active and adaptable.  
 
 ---
 
-## Breeding
+## Vocalization  
+Song: A series of short, varied notes and chirps. Call: Sharp "chirik" or "tsee."  
 
 ---
 
-## Conservation
-IUCN Status:
-Threats:
+## Breeding  
+Nests in cavities, building untidy nests of grass, paper, and twigs. Clutch size: 3–5 eggs. Incubation: 11–14 days (female primarily). Both parents feed nestlings.  
 
 ---
 
-## Ecological Importance
+## Conservation  
+IUCN Status: Least Concern  
+Threats: Habitat loss, pesticide use, competition from invasive species, and urbanization.  
 
 ---
 
-## Interesting Facts
-- Fact 1
-- Fact 2
-- Fact 3
+## Ecological Importance  
+Seeds and insect dispersers; helps control pest populations. Often viewed as a pest in urban settings.  
 
 ---
 
-## References
-- Wikipedia
-- Cornell Lab of Ornithology
-- BirdLife International
+## Interesting Facts  
+- One of the most common birds in human-populated areas worldwide.  
+- Adapted to urban environments, nesting in buildings and feeding on human waste.  
+- Declining in some European cities due to reduced availability of traditional nesting sites.  
+
+---
+
+## References  
+- Wikipedia – House Sparrow  
+- Cornell Lab of Ornithology – House Sparrow  
+- BirdLife International – House Sparrow

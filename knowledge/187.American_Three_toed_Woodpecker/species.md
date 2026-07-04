@@ -1,69 +1,76 @@
-# 187.American Three toed Woodpecker
+# American Three-toed Woodpecker
 
-## Basic Information
-Scientific Name:
-Family:
-Order:
-
----
-
-## Identification
-Average Length:
-Average Wingspan:
-Average Weight:
-Male vs Female Differences:
-Distinctive Features:
+## Basic Information  
+Scientific Name: Picoides dorsalis  
+Family: Picidae  
+Order: Piciformes  
 
 ---
 
-## Habitat
+## Identification  
+Average Length: 20–24 cm  
+Average Wingspan: 36–40 cm  
+Average Weight: 45–60 g  
+Male vs Female Differences: Males have a red crown; females have a black crown.  
+Distinctive Features: Three toes (instead of four in most woodpeckers), black and white plumage, white back, and a long, chisel-like beak.  
 
 ---
 
-## Geographic Distribution
+## Habitat  
+Coniferous and mixed forests, especially areas with dead or decaying trees for nesting.  
 
 ---
 
-## Migration
-Migratory Status:
-Migration Pattern:
+## Geographic Distribution  
+North America, ranging from Alaska and Canada southward to the northern United States.  
 
 ---
 
-## Diet
+## Migration  
+Migratory Status: Migratory  
+Migration Pattern: Breeds in northern regions; winters in the southern United States and Mexico.  
 
 ---
 
-## Behaviour
+## Diet  
+Insects, particularly wood-boring beetles, ants, and larvae. Also consumes berries and seeds in winter.  
 
 ---
 
-## Vocalization
+## Behaviour  
+Drums on trees to communicate and locate prey. Climbs vertically using stiff tail feathers for support. Stores food in bark crevices.  
 
 ---
 
-## Breeding
+## Vocalization  
+Sharp, high-pitched "quee-er" calls and rhythmic drumming on trees.  
 
 ---
 
-## Conservation
-IUCN Status:
-Threats:
+## Breeding  
+Nests in tree cavities, often in dead trees. Clutch size: 3–5 eggs. Both parents incubate for 12–14 days.  
 
 ---
 
-## Ecological Importance
+## Conservation  
+IUCN Status: Least Concern  
+Threats: Habitat loss due to logging and forest fragmentation.  
 
 ---
 
-## Interesting Facts
-- Fact 1
-- Fact 2
-- Fact 3
+## Ecological Importance  
+Controls insect populations and creates cavities used by other species.  
 
 ---
 
-## References
-- Wikipedia
-- Cornell Lab of Ornithology
-- BirdLife International
+## Interesting Facts  
+- The only woodpecker in North America with three toes instead of four.  
+- Uses its beak to drill into trees for insects and to create nesting cavities.  
+- Can store food in its throat for later consumption.  
+
+---
+
+## References  
+- Wikipedia – American Three-toed Woodpecker  
+- Cornell Lab of Ornithology – American Three-toed Woodpecker  
+- BirdLife International – American Three-toed Woodpecker

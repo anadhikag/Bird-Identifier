@@ -1,69 +1,77 @@
-# 175.Pine Warbler
+# Pine Warbler
 
 ## Basic Information
-Scientific Name:
-Family:
-Order:
+Scientific Name: Setophaga pinus  
+Family: Parulidae  
+Order: Passeriformes  
 
 ---
 
 ## Identification
-Average Length:
-Average Wingspan:
-Average Weight:
-Male vs Female Differences:
-Distinctive Features:
+Average Length: 12–14 cm  
+Average Wingspan: 18–21 cm  
+Average Weight: 10–13 g  
+Male vs Female Differences: Males have brighter yellow underparts and a black throat during breeding season; females have duller coloration and a grayish throat.  
+Distinctive Features: Yellow underparts, olive upperparts, white wing bars, and a black throat in males during breeding season.  
 
 ---
 
-## Habitat
+## Habitat  
+Breeds in pine forests, especially longleaf and loblolly pines, in the southeastern United States. Also inhabits open woodlands and pine-oak forests.  
 
 ---
 
-## Geographic Distribution
+## Geographic Distribution  
+Breeds in the southeastern U.S. (Texas to the Carolinas); winters in the southern U.S., Mexico, the Caribbean, and northern South America. Some populations are year-round residents in the southeastern U.S.  
 
 ---
 
-## Migration
-Migratory Status:
-Migration Pattern:
+## Migration  
+Migratory Status: Partial migrant  
+Migration Pattern: Short-distance migrants; some populations migrate to the southern U.S., while others travel further to Mexico and the Caribbean.  
 
 ---
 
-## Diet
+## Diet  
+Insects (caterpillars, beetles, spiders) during breeding season; switches to berries and seeds in winter.  
 
 ---
 
-## Behaviour
+## Behaviour  
+Active foragers in pine trees, often hovering to catch insects. Singing from exposed perches to defend territory. Frequently joins mixed-species flocks during migration.  
 
 ---
 
-## Vocalization
+## Vocalization  
+Song: A series of clear, whistled notes, often described as "fee-bee-see" or "fee-fee-fee-bee."  
+Call: Sharp "tik" or "chink" notes.  
 
 ---
 
-## Breeding
+## Breeding  
+Nests in pine trees, building a cup-shaped nest of bark strips, grass, and moss. Clutch size: 3–4 eggs. Incubation lasts 12–14 days, primarily by the female. Both parents feed the young.  
 
 ---
 
-## Conservation
-IUCN Status:
-Threats:
+## Conservation  
+IUCN Status: Least Concern  
+Threats: Habitat loss due to logging, urban development, and pine forest degradation.  
 
 ---
 
-## Ecological Importance
+## Ecological Importance  
+Controls insect populations and aids in seed dispersal through consumption of berries.  
 
 ---
 
-## Interesting Facts
-- Fact 1
-- Fact 2
-- Fact 3
+## Interesting Facts  
+- One of the few warblers that feed on pine seeds during winter.  
+- Males sing from high perches to defend breeding territories.  
+- Frequently forages in mixed-species flocks during migration.  
 
 ---
 
-## References
-- Wikipedia
-- Cornell Lab of Ornithology
-- BirdLife International
+## References  
+- Wikipedia – Pine Warbler  
+- Cornell Lab of Ornithology – Pine Warbler  
+- BirdLife International – Pine Warbler

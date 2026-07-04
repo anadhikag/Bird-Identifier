@@ -1,69 +1,76 @@
-# 172.Nashville Warbler
+# Nashville Warbler
 
 ## Basic Information
-Scientific Name:
-Family:
-Order:
+Scientific Name: Geothlypis formosa  
+Family: Parulidae  
+Order: Passeriformes  
 
 ---
 
 ## Identification
-Average Length:
-Average Wingspan:
-Average Weight:
-Male vs Female Differences:
-Distinctive Features:
+Average Length: 11–12 cm  
+Average Wingspan: 19–21 cm  
+Average Weight: 10–13 g  
+Male vs Female Differences: Males have a black mask, yellow underparts, and olive upperparts; females are duller with a less distinct mask and olive-yellow underparts.  
+Distinctive Features: Black mask in males, olive-yellow plumage, and a short, rounded tail.  
 
 ---
 
-## Habitat
+## Habitat  
+Breeds in deciduous or mixed forests with dense undergrowth, often near water. Winters in tropical forests and second-growth habitats in Central America and the Caribbean.  
 
 ---
 
-## Geographic Distribution
+## Geographic Distribution  
+Breeding range spans eastern North America from southern Canada to the northern United States. Winters in Central America (e.g., Mexico, Costa Rica) and the Caribbean (e.g., Cuba, Jamaica).  
 
 ---
 
-## Migration
-Migratory Status:
-Migration Pattern:
+## Migration  
+Migratory Status: Migratory  
+Migration Pattern: Travels from North America to Central America and the Caribbean for winter, often joining mixed-species flocks during migration.  
 
 ---
 
-## Diet
+## Diet  
+Insects, including caterpillars, beetles, and flies; occasionally consumes berries.  
 
 ---
 
-## Behaviour
+## Behaviour  
+Active, flitting forager in undergrowth, often following mixed-species flocks. Displays tail-fanning during courtship.  
 
 ---
 
-## Vocalization
+## Vocalization  
+Song: A series of short, sharp notes, often described as "chip" or "tsee." Call: High-pitched "tsee" or "chit."  
 
 ---
 
-## Breeding
+## Breeding  
+Nests in shrubs or low trees, building a cup-shaped nest of grasses and bark. Clutch size: 3–4 eggs. Incubation lasts 12–13 days, primarily by the female.  
 
 ---
 
-## Conservation
-IUCN Status:
-Threats:
+## Conservation  
+IUCN Status: Least Concern  
+Threats: Habitat loss in breeding and wintering grounds, pesticide use.  
 
 ---
 
-## Ecological Importance
+## Ecological Importance  
+Controls insect populations and contributes to seed dispersal through fruit consumption.  
 
 ---
 
-## Interesting Facts
-- Fact 1
-- Fact 2
-- Fact 3
+## Interesting Facts  
+- One of the earliest warblers to migrate north in spring.  
+- Males perform a tail-fanning display during courtship.  
+- Often joins mixed-species flocks during migration for foraging and predator avoidance.  
 
 ---
 
-## References
-- Wikipedia
-- Cornell Lab of Ornithology
-- BirdLife International
+## References  
+- Wikipedia – Nashville Warbler  
+- Cornell Lab of Ornithology – Nashville Warbler  
+- BirdLife International – Nashville Warbler
