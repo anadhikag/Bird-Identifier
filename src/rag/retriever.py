@@ -8,7 +8,7 @@ is purely a similarity search step.
 """
 
 from __future__ import annotations
-
+import re
 import logging
 from dataclasses import dataclass
 from typing import Optional
@@ -42,15 +42,19 @@ class RetrievedChunk:
 
 
 def _normalize_species_name(value: str) -> str:
-    """Normalize a species name for loose, separator-insensitive comparison.
+    """Normalize species names for comparison."""
+    value = value.strip().lower()
 
-    Args:
-        value: A species name, e.g. "Blue_Jay" or "Blue Jay".
+    # Remove folder prefix like "017."
+    value = re.sub(r"^\d+\.", "", value)
 
-    Returns:
-        Lowercased, underscore-free, whitespace-trimmed representation.
-    """
-    return value.strip().lower().replace("_", " ")
+    # Convert underscores to spaces
+    value = value.replace("_", " ")
+
+    # Collapse multiple spaces
+    value = " ".join(value.split())
+
+    return value
 
 
 def _species_matches(stored_species: str, requested_species: str) -> bool:

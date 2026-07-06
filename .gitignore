@@ -16,3 +16,9 @@ vector_db/
 runs/
 
 .DS_Store
+
+outputs/
+
+node_modules/
+frontend/node_modules/
+dist/

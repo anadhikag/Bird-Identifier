@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #0f1713; /* Deep Forest Green */
+    color: #fcfbf7; /* Warm Ivory */
+  }
+
+  /* Custom scrollbar for premium look */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0f1713;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2b3f33;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #537d63;
+  }
+}
+
+@layer components {
+  /* Editorial card paper stylings */
+  .field-paper {
+    background-color: #fcfbf7;
+    color: #2c1e17; /* Dark Bark Brown text */
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+    border: 1px solid #eae3cc;
+  }
+
+  /* Glassmorphism styling */
+  .glass-panel {
+    background: rgba(15, 23, 19, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(83, 125, 99, 0.2);
+  }
+
+  /* Subtle leaf swaying in wind */
+  .wind-sway {
+    animation: sway 8s ease-in-out infinite;
+  }
+}
