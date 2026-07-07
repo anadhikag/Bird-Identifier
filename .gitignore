@@ -2,16 +2,11 @@ venv/
 __pycache__/
 *.pyc
 
-models/
 data/
-vector_db/
 
 .env
 
 .vscode/
-
-*.pth
-*.pt
 
 runs/
 
