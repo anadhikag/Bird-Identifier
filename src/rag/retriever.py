@@ -13,6 +13,8 @@ import logging
 from dataclasses import dataclass
 from typing import Optional
 
+import numpy as np
+
 from src.rag.embeddings import EmbeddingModel, VectorStoreConfig, load_vector_store
 
 logger = logging.getLogger(__name__)
@@ -79,6 +81,20 @@ class Retriever:
     Loads the FAISS index and metadata once at construction time and
     reuses them, along with a single embedding model instance, across
     all subsequent `retrieve` calls.
+
+    Species-aware retrieval
+    -----------------------
+    When ``species`` is supplied to :meth:`retrieve`, we *first* restrict
+    the candidate pool to only those FAISS positions that belong to that
+    species, then rank those positions by cosine similarity to the query.
+    This guarantees that relevant chunks are always found, regardless of
+    how semantically similar the query is to other species' content.
+
+    The position map ``_species_positions`` is built once at construction
+    time in a single O(n) pass over the metadata list (n ≈ 772).  At
+    query time, looking up the positions for a species is O(1), and
+    reconstructing 3-5 vectors from a flat FAISS index is O(k × dim) —
+    faster than a global 772-vector search.
     """
 
     def __init__(
@@ -91,20 +107,117 @@ class Retriever:
         Args:
             config: Vector store configuration specifying index and
                 metadata paths, and the embedding model name. Defaults
-                to `VectorStoreConfig()` if not provided.
+                to ``VectorStoreConfig()`` if not provided.
             embedding_model: Optional pre-constructed EmbeddingModel,
                 reused for query embedding. If None, a new one is
-                created using `config.model_name`. Passing the same
+                created using ``config.model_name``. Passing the same
                 instance used at index-build time guarantees query
                 vectors live in the same embedding space as the index.
 
         Raises:
             FileNotFoundError: If the vector store has not been built
-                yet (see `embeddings.build_or_load_vector_store`).
+                yet (see ``embeddings.build_or_load_vector_store``).
         """
         self.config = config or VectorStoreConfig()
         self._index, self._metadata = load_vector_store(self.config)
         self._embedding_model = embedding_model or EmbeddingModel(model_name=self.config.model_name)
+
+        # Build an O(1) lookup from species folder name → list of FAISS
+        # positions.  This single O(n) pass at startup is cheaper than
+        # scanning metadata on every retrieve() call.
+        self._species_positions: dict[str, list[int]] = {}
+        for position, record in enumerate(self._metadata):
+            key = record["species"]
+            self._species_positions.setdefault(key, []).append(position)
+
+        logger.info(
+            "Retriever ready: %d vectors, %d species",
+            self._index.ntotal,
+            len(self._species_positions),
+        )
+
+    # ------------------------------------------------------------------
+    # Internal helpers
+    # ------------------------------------------------------------------
+
+    def _retrieve_for_species(
+        self,
+        query_vector: np.ndarray,
+        species: str,
+        top_k: int,
+    ) -> list[RetrievedChunk]:
+        """Rank only the chunks that belong to *species* by similarity.
+
+        Uses ``IndexFlatIP.reconstruct()`` to fetch the stored vectors
+        for the target species, then computes cosine similarity via a
+        simple dot product (valid because all vectors are L2-normalised
+        at index-build time).
+
+        This is guaranteed to find relevant chunks because it *never*
+        discards any candidate before scoring — every chunk for the
+        species is considered.
+
+        Args:
+            query_vector: Shape ``(dim,)`` float32, L2-normalised.
+            species: Canonical species folder name, e.g. ``"017.Cardinal"``.
+            top_k: Maximum number of chunks to return.
+
+        Returns:
+            List of :class:`RetrievedChunk` ordered by descending score,
+            at most ``top_k`` items.
+        """
+        # Resolve positions using exact folder name first; fall back to
+        # normalized matching in case the caller passes a slightly
+        # different form (e.g. without the numeric prefix).
+        positions = self._species_positions.get(species)
+
+        if positions is None:
+            # Try normalized matching as a fallback.
+            norm_requested = _normalize_species_name(species)
+            for stored_key, pos_list in self._species_positions.items():
+                if _normalize_species_name(stored_key) == norm_requested:
+                    positions = pos_list
+                    break
+
+        if not positions:
+            logger.warning(
+                "No vectors found in index for species: %s", species
+            )
+            return []
+
+        # Reconstruct the stored float32 vectors for this species.
+        # IndexFlatIP.reconstruct(i) is O(dim) and always correct for
+        # flat indexes — it returns the exact vector that was added.
+        species_vectors = np.stack(
+            [self._index.reconstruct(pos) for pos in positions],
+            axis=0,
+        )  # shape: (n_chunks, dim)
+
+        # Cosine similarity = dot product for L2-normalised vectors.
+        scores = species_vectors @ query_vector  # shape: (n_chunks,)
+
+        # Sort descending and take the top_k.
+        order = np.argsort(scores)[::-1][:top_k]
+
+        chunks: list[RetrievedChunk] = []
+        for idx in order:
+            pos = positions[idx]
+            record = self._metadata[pos]
+            chunks.append(
+                RetrievedChunk(
+                    text=record["text"],
+                    species=record["species"],
+                    source_path=record["source_path"],
+                    chunk_index=record["chunk_index"],
+                    score=float(scores[idx]),
+                )
+            )
+
+        return chunks
+
+    # ------------------------------------------------------------------
+    # Public API
+    # ------------------------------------------------------------------
 
     def retrieve(
         self,
@@ -115,26 +228,33 @@ class Retriever:
     ) -> list[RetrievedChunk]:
         """Retrieve the top-k most relevant chunks for a query.
 
+        When ``species`` is supplied the search is restricted to that
+        species' chunks *before* any similarity comparison, so results
+        are always grounded in the correct species' knowledge.
+
+        When ``species`` is ``None`` the existing global FAISS search is
+        used unchanged.
+
         Args:
             query: Natural-language question or search text.
             top_k: Number of chunks to return.
             species: If provided, restrict results to chunks whose
-                metadata species matches this value (case-insensitive,
-                underscore/space-insensitive). Used to scope retrieval
-                to the species already identified by the CNN
-                classifier.
-            over_fetch_factor: Multiplier applied to `top_k` when
-                `species` filtering is requested, so FAISS returns
-                enough candidates for post-filtering to still yield
-                `top_k` results.
+                metadata species matches this value.  Must be the
+                canonical folder name returned by ``POST /predict``,
+                e.g. ``"017.Cardinal"``.
+            over_fetch_factor: Retained for API compatibility.  Has no
+                effect when ``species`` is supplied, because the
+                species-aware path considers every chunk for that species
+                rather than relying on FAISS over-fetching.
 
         Returns:
-            List of RetrievedChunk objects ordered by descending
-            similarity score. May contain fewer than `top_k` items if
-            the vector store does not have enough matching chunks.
+            List of :class:`RetrievedChunk` objects ordered by
+            descending similarity score. May contain fewer than
+            ``top_k`` items if the knowledge base has fewer chunks for
+            the species than requested.
 
         Raises:
-            ValueError: If query is empty/blank or top_k is not
+            ValueError: If ``query`` is empty/blank or ``top_k`` is not
                 positive.
         """
         if not query or not query.strip():
@@ -142,30 +262,29 @@ class Retriever:
         if top_k <= 0:
             raise ValueError("top_k must be a positive integer.")
 
-        # Retrieve more candidates when filtering by species
-        fetch_count = top_k * over_fetch_factor if species else top_k
-        fetch_count = max(min(fetch_count, self._index.ntotal), 1)
+        # Embed the query once regardless of the retrieval path.
+        query_embedding = self._embedding_model.encode([query])
+        query_vector = query_embedding[0]  # shape: (dim,)
 
-        # Include the species name in the semantic search query.
-        # The CNN has already identified the bird, so this helps
-        # the embedding model retrieve chunks from the correct species.
-        search_query = query
-
+        # ------------------------------------------------------------------
+        # Species-aware path: filter-first, then rank.
+        # ------------------------------------------------------------------
         if species:
-            search_query = f"Species: {species}\nQuestion: {query}"
+            chunks = self._retrieve_for_species(query_vector, species, top_k)
+            if not chunks:
+                logger.warning("No chunks found for species filter: %s", species)
+            return chunks
 
-        query_embedding = self._embedding_model.encode([search_query])
-        scores, indices = self._index.search(query_embedding, fetch_count)
+        # ------------------------------------------------------------------
+        # Global path (no species filter): existing FAISS search unchanged.
+        # ------------------------------------------------------------------
+        scores, indices = self._index.search(query_embedding, top_k)
 
         candidates: list[RetrievedChunk] = []
         for score, position in zip(scores[0], indices[0]):
             if position < 0:
                 continue
-
             record = self._metadata[position]
-            if species and not _species_matches(record["species"], species):
-                continue
-
             candidates.append(
                 RetrievedChunk(
                     text=record["text"],
@@ -175,11 +294,5 @@ class Retriever:
                     score=float(score),
                 )
             )
-
-            if len(candidates) >= top_k:
-                break
-
-        if species and not candidates:
-            logger.warning("No chunks found for species filter: %s", species)
 
         return candidates

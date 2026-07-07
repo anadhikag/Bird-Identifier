@@ -11,6 +11,7 @@ import ExplainabilityViewer from './components/ExplainabilityViewer'
 import BirdProfileCard from './components/BirdProfileCard'
 import FieldGuide from './components/FieldGuide'
 import ChatSection from './components/ChatSection'
+import NaturalistModal from './components/NaturalistModal'
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 
@@ -37,6 +38,7 @@ export default function App() {
   const [speciesData, setSpeciesData] = useState<any | null>(null)
   const [showGradcam, setShowGradcam] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [showNaturalist, setShowNaturalist] = useState(false)
 
   // Ref attached to the top of the results container so we can scroll
   // exactly there — and nowhere else — after a successful prediction.
@@ -124,7 +126,7 @@ export default function App() {
                   Artificial Intelligence Field Journal
                 </span>
                 <h1 className="font-serif text-5xl md:text-7xl font-bold tracking-tight text-ivory-100 leading-none">
-                  Bird Identifier AI
+                  Birdie
                 </h1>
                 <p className="font-serif italic text-lg md:text-xl text-ivory-300/80 max-w-xl mx-auto font-light leading-relaxed">
                   Every feather tells a story. Let's discover this one's.
@@ -298,10 +300,28 @@ export default function App() {
         </AnimatePresence>
       </main>
 
-      {/* Footer copyright editorial */}
-      <footer className="relative border-t border-forest-900/40 py-6 text-center text-xs text-ivory-400/20 font-mono tracking-widest uppercase z-10">
-        © 2026 Bird Identifier AI · BBC Earth & National Geographic Styled
+      {/* Footer */}
+      <footer className="relative border-t border-forest-900/40 py-6 z-10">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 container mx-auto px-4">
+          <span className="text-xs text-ivory-400/20 font-mono tracking-widest uppercase">
+            © 2026 Birdie · AI Field Journal
+          </span>
+          <button
+            onClick={() => setShowNaturalist(true)}
+            className="group flex items-center gap-2 text-xs text-ivory-400/30 hover:text-gold-400 font-mono tracking-widest uppercase transition-colors duration-300"
+          >
+            Meet the Naturalist
+            <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </button>
+        </div>
       </footer>
+
+      {/* Naturalist modal — rendered outside AnimatePresence so it is
+          accessible from every screen without disturbing page transitions */}
+      <NaturalistModal
+        isOpen={showNaturalist}
+        onClose={() => setShowNaturalist(false)}
+      />
     </div>
   )
 }
