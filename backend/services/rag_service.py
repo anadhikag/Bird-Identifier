@@ -11,9 +11,11 @@ reused across all requests; see backend/app.py's lifespan handler.
 from __future__ import annotations
 
 import logging
-from typing import Optional
+import threading
+from typing import Optional, TYPE_CHECKING
 
-from src.rag.chat import BirdChat
+if TYPE_CHECKING:
+    from src.rag.chat import BirdChat
 
 logger = logging.getLogger(__name__)
 
@@ -27,21 +29,30 @@ class RAGService:
     """
 
     def __init__(self, chat: Optional[BirdChat] = None) -> None:
-        """Load the RAG chat pipeline.
+        """Store initial chat instance or setup lazy initialization parameters.
 
         Args:
             chat: An already-constructed BirdChat instance, primarily
                 for dependency injection in tests. If None, a new
                 BirdChat is constructed using its default configuration.
-
-        Raises:
-            FileNotFoundError: If the vector store has not been built
-                yet.
-            ValueError: If GROQ_API_KEY is not set in the environment.
         """
-        logger.info("Loading RAGService.")
-        self._chat = chat or BirdChat()
-        logger.info("RAGService ready.")
+        self._chat = chat
+        self._lock = threading.Lock()
+
+    def _ensure_initialized(self) -> None:
+        """Initialize BirdChat thread-safely."""
+        if self._chat is not None:
+            return
+
+        with self._lock:
+            if self._chat is not None:
+                return
+
+            logger.info("Initializing RAGService...")
+            # Delayed import to avoid loading sentence_transformers/faiss on startup
+            from src.rag.chat import BirdChat as _BirdChat
+            self._chat = _BirdChat()
+            logger.info("RAGService ready.")
 
     def ask(self, species: str, question: str) -> str:
         """Answer a question about an already-identified bird species.
@@ -58,4 +69,7 @@ class RAGService:
             ValueError: If species or question is empty or blank.
             RuntimeError: If the underlying Groq API call fails.
         """
+        self._ensure_initialized()
+        assert self._chat is not None
         return self._chat.ask(species=species, question=question)
+

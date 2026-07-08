@@ -15,14 +15,16 @@ from __future__ import annotations
 import base64
 import io
 import logging
+import threading
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Optional, Union
+from typing import Optional, Union, TYPE_CHECKING
 
 from PIL import Image
 
-from src.classification.gradcam import GradCAMGenerator
-from src.classification.infer import BirdInference
+if TYPE_CHECKING:
+    from src.classification.gradcam import GradCAMGenerator
+    from src.classification.infer import BirdInference
 
 logger = logging.getLogger(__name__)
 
@@ -86,21 +88,37 @@ class ClassifierService:
         checkpoint_path: Union[str, Path],
         device: Optional[str] = None,
     ) -> None:
-        """Load the classification and Grad-CAM components.
+        """Store configuration for lazy loading the classification and Grad-CAM components.
 
         Args:
             checkpoint_path: Path to the .pt checkpoint saved by
                 train.py (e.g. "models/bird_classifier_best.pt").
             device: Device to run inference on. Defaults to "cuda" if
                 available, otherwise "cpu".
-
-        Raises:
-            FileNotFoundError: If checkpoint_path does not exist.
         """
-        logger.info("Loading ClassifierService from checkpoint: %s", checkpoint_path)
-        self._inference = BirdInference(checkpoint_path=checkpoint_path, device=device)
-        self._gradcam_generator = GradCAMGenerator(checkpoint_path=checkpoint_path, device=device)
-        logger.info("ClassifierService ready.")
+        self._checkpoint_path = checkpoint_path
+        self._device = device
+        self._inference: Optional[BirdInference] = None
+        self._gradcam_generator: Optional[GradCAMGenerator] = None
+        self._lock = threading.Lock()
+
+    def _ensure_initialized(self) -> None:
+        """Initialize BirdInference and GradCAMGenerator thread-safely."""
+        if self._inference is not None and self._gradcam_generator is not None:
+            return
+
+        with self._lock:
+            if self._inference is not None and self._gradcam_generator is not None:
+                return
+
+            logger.info("Initializing ClassifierService...")
+            # Delayed imports to avoid loading torch and models on startup
+            from src.classification.gradcam import GradCAMGenerator as _GradCAMGenerator
+            from src.classification.infer import BirdInference as _BirdInference
+
+            self._inference = _BirdInference(checkpoint_path=self._checkpoint_path, device=self._device)
+            self._gradcam_generator = _GradCAMGenerator(checkpoint_path=self._checkpoint_path, device=self._device)
+            logger.info("ClassifierService ready.")
 
     def predict(self, image: Image.Image, top_k: int = 5) -> ClassifierPredictionResult:
         """Classify an image and generate its Grad-CAM explanation.
@@ -114,6 +132,10 @@ class ClassifierService:
             full top-k ranking, and a base64-encoded PNG Grad-CAM
             overlay.
         """
+        self._ensure_initialized()
+        assert self._inference is not None
+        assert self._gradcam_generator is not None
+
         inference_result = self._inference.predict(image, top_k=top_k)
         gradcam_result = self._gradcam_generator.generate(image)
 
@@ -139,4 +161,7 @@ class ClassifierService:
 
         Should be called once at application shutdown.
         """
-        self._gradcam_generator.close()
+        with self._lock:
+            if self._gradcam_generator is not None:
+                self._gradcam_generator.close()
+
