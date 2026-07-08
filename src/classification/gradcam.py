@@ -39,28 +39,25 @@ class GradCAMGenerator:
         self._cam: Optional[Any] = None
         self._last_overlay: Optional[Image.Image] = None
 
-    def _ensure_model_loaded((self) -> None:
+    def _ensure_model_loaded(self) -> None:
         """Lazy load the inference model safely."""
         if self._inference is None:
             self._inference = BirdInference(checkpoint_path=self._checkpoint_path, device=self._device_arg)
             self._model = self._inference.model
             self._model.eval()
 
-    def _get_cam_engine(self) -> Any:
-        """Lazy load pytorch_grad_cam ONLY when generating a heatmap."""
-        self._ensure_model_loaded()
-        if self._cam is None:
-            # Deferred import prevents cv2 / libxcb loading during app startup
-            from pytorch_grad_cam import GradCAM
-            target_layer = self._model.get_feature_extractor()[-1]
-            self._cam = GradCAM(model=self._model, target_layers=[target_layer])
-            logger.info("GradCAM engine initialized.")
-        return self._cam
-
     def generate(self, image: Image.Image) -> GradCAMResult:
         """Run Grad-CAM on a single image."""
         self._ensure_model_loaded()
-        cam_engine = self._get_cam_engine()
+
+        # DEFERRED IMPORT: ONLY import pytorch_grad_cam here so it NEVER runs during app startup!
+        from pytorch_grad_cam import GradCAM
+        from pytorch_grad_cam.utils.model_targets import ClassifierOutputTarget
+        from pytorch_grad_cam.utils.image import show_cam_on_image
+
+        if self._cam is None:
+            target_layer = self._model.get_feature_extractor()[-1]
+            self._cam = GradCAM(model=self._model, target_layers=[target_layer])
 
         rgb_image = image.convert("RGB")
         input_tensor = self._inference.transform(rgb_image).unsqueeze(0).to(self._inference.device)
@@ -73,15 +70,13 @@ class GradCAMGenerator:
         confidence = float(probabilities[predicted_index].item())
         predicted_class = self._inference.class_names[predicted_index]
 
-        from pytorch_grad_cam.utils.model_targets import ClassifierOutputTarget
         targets = [ClassifierOutputTarget(predicted_index)]
-        grayscale_cam = cam_engine(input_tensor=input_tensor, targets=targets)[0]
+        grayscale_cam = self._cam(input_tensor=input_tensor, targets=targets)[0]
 
         input_height, input_width = input_tensor.shape[-2], input_tensor.shape[-1]
         resized_image = rgb_image.resize((input_width, input_height))
         normalized_rgb = np.asarray(resized_image, dtype=np.float32) / 255.0
 
-        from pytorch_grad_cam.utils.image import show_cam_on_image
         overlay_array = show_cam_on_image(normalized_rgb, grayscale_cam, use_rgb=True)
         overlay_image = Image.fromarray(overlay_array)
 
