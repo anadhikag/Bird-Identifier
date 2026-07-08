@@ -13,8 +13,8 @@ timm
 opencv-python-headless==4.10.0.84
 Pillow
 
---no-deps albumentations==1.4.0
---no-deps grad-cam==1.5.4
+albumentations==1.4.0
+grad-cam==1.5.4
 
 sentence-transformers
 faiss-cpu
