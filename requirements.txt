@@ -1,31 +1,52 @@
-﻿fastapi
-uvicorn[standard]
-gunicorn
+# ==============================================================================
+# Birdie — Python dependencies
+#
+# PyTorch CPU-only wheels
+# -----------------------
+# We use --index-url (NOT --extra-index-url) so that pip treats the PyTorch
+# CPU wheel server as the PRIMARY index for the packages listed below.  This
+# prevents pip from pulling the CUDA-enabled torch wheel from PyPI, which
+# drags in nvidia-cublas / nvidia-cudnn / triton / etc. and inflates the
+# installed footprint from ~180 MB to ~2,500 MB.
+#
+# The --extra-index-url fallback ensures every other package still resolves
+# from the standard PyPI index.
+# ==============================================================================
 
---extra-index-url https://download.pytorch.org/whl/cpu
+--index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://pypi.org/simple
 
-torch==2.12.1
-torchvision==0.27.1
+torch==2.12.1+cpu
+torchvision==0.27.1+cpu
+
+# ML / CV
 timm
-
-opencv-python
+opencv-python-headless
 Pillow
-albumentations
-numpy
-pandas
-matplotlib
-scikit-learn
-tqdm
-
 grad-cam
 
+# Data
+numpy
+pandas
+scikit-learn
+
+# RAG / Embeddings
 sentence-transformers
 faiss-cpu
 
-groq
-python-dotenv
+# API
+fastapi
+uvicorn[standard]
+gunicorn
 python-multipart
+python-dotenv
 
+# LLM client
+groq
+
+# Utilities
 requests
 pyyaml
 rich
+albumentations
+tqdm
