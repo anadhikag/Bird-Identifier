@@ -25,9 +25,9 @@ from typing import Optional, Union
 import numpy as np
 import torch
 from PIL import Image
-from pytorch_grad_cam import GradCAM
-from pytorch_grad_cam.utils.image import show_cam_on_image
-from pytorch_grad_cam.utils.model_targets import ClassifierOutputTarget
+# pytorch_grad_cam imports are deferred into __init__ and generate()
+# to prevent cv2 / libxcb from loading at module import time.
+# See inline comments at each deferred import site.
 
 from src.classification.infer import BirdInference
 
@@ -85,6 +85,13 @@ class GradCAMGenerator:
         self._model = self._inference.model
         self._model.eval()
 
+        # Deferred: importing pytorch_grad_cam at module scope loads cv2
+        # transitively (via the package __init__ re-exporting all submodules,
+        # each of which imports pytorch_grad_cam.utils.image, which imports cv2).
+        # cv2 links against libxcb.so.1, an X11/GUI library absent on Azure
+        # App Service headless Linux, causing an ImportError at startup.
+        # Deferring to here means cv2 only loads on the first /predict call.
+        from pytorch_grad_cam import GradCAM
         target_layer = self._model.get_feature_extractor()[-1]
         self._cam = GradCAM(model=self._model, target_layers=[target_layer])
 
@@ -117,6 +124,8 @@ class GradCAMGenerator:
         confidence = float(probabilities[predicted_index].item())
         predicted_class = self._inference.class_names[predicted_index]
 
+        # Deferred: same reason as the GradCAM import above.
+        from pytorch_grad_cam.utils.model_targets import ClassifierOutputTarget
         targets = [ClassifierOutputTarget(predicted_index)]
         grayscale_cam = self._cam(input_tensor=input_tensor, targets=targets)[0]
 
@@ -124,6 +133,15 @@ class GradCAMGenerator:
         resized_image = rgb_image.resize((input_width, input_height))
         normalized_rgb = np.asarray(resized_image, dtype=np.float32) / 255.0
 
+        # Deferred import: pytorch_grad_cam.utils.image imports cv2 at module
+        # scope, which requires libxcb.so.1 (an X11/GUI library absent on
+        # Azure App Service headless Linux). Importing here instead of at
+        # module level defers the cv2 load until the first /predict request,
+        # by which point it is irrelevant whether libxcb exists — cv2 is
+        # only used by show_cam_on_image for colormap application, which
+        # works fine without a display. Python caches the import after the
+        # first call so there is no repeated import overhead.
+        from pytorch_grad_cam.utils.image import show_cam_on_image
         overlay_array = show_cam_on_image(normalized_rgb, grayscale_cam, use_rgb=True)
         overlay_image = Image.fromarray(overlay_array)
 
