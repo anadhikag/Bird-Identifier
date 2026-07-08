@@ -127,6 +127,11 @@ jobs:
           path: deploy.zip
           retention-days: 1
 
+      - name: Clean up frontend before deployment
+        run: |
+          rm -rf frontend
+          rm -rf node_modules
+
   # --------------------------------------------------------------------------
   # DEPLOY — push to Azure; Oryx installs dependencies from requirements.txt
   # --------------------------------------------------------------------------
