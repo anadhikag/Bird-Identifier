@@ -9,6 +9,7 @@ on:
       - 'src/**'
       - 'requirements.txt'
       - 'Dockerfile'
+      - '.github/workflows/**'
 
 jobs:
   build-and-deploy:
