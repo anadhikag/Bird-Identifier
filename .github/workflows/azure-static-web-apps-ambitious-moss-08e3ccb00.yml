@@ -23,17 +23,16 @@ jobs:
           submodules: true
           lfs: false
 
-      # 👇 NEW: Build the frontend in the GitHub Actions runner
       - name: Build frontend
         run: |
           cd frontend
-          rm -rf node_modules package-lock.json   # Start fresh
+          rm -rf node_modules package-lock.json
           npm install
-          npx update-browserslist-db@latest       # Ensures caniuse-lite data is present
+          npx update-browserslist-db@latest
           npm run build
-          env:
-            VITE_API_URL: "https://birdie-backend.bluebush-a7cd5f2a.centralindia.azurecontainerapps.io"
-            
+        env:
+          VITE_API_URL: "https://birdie-backend.bluebush-a7cd5f2a.centralindia.azurecontainerapps.io"
+
       - name: Install OIDC Client from Core Package
         run: npm install @actions/core@1.6.0 @actions/http-client
 
@@ -56,7 +55,6 @@ jobs:
           api_location: ""
           output_location: "build"
           github_id_token: ${{ steps.idtoken.outputs.result }}
-          # 👇 NEW: Skip Oryx build - we already built it above
           skip_app_build: true
 
   close_pull_request_job:
