@@ -27,12 +27,13 @@ jobs:
       - name: Build frontend
         run: |
           cd frontend
+          rm -rf node_modules package-lock.json   # Start fresh
           npm install
-          npm install node-releases --save-dev   # <-- explicitly install the missing package
+          npx update-browserslist-db@latest       # Ensures caniuse-lite data is present
           npm run build
-        env:
-          VITE_API_URL: "https://birdie-backend.bluebush-a7cd5f2a.centralindia.azurecontainerapps.io"
-
+          env:
+            VITE_API_URL: "https://birdie-backend.bluebush-a7cd5f2a.centralindia.azurecontainerapps.io"
+            
       - name: Install OIDC Client from Core Package
         run: npm install @actions/core@1.6.0 @actions/http-client
 
