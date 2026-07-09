@@ -1,4 +1,3 @@
-@'
 FROM python:3.11-slim
 
 ENV PYTHONUNBUFFERED=1 \
@@ -31,4 +30,3 @@ COPY vector_db/ ./vector_db/
 EXPOSE 8000
 
 CMD ["gunicorn", "-w", "1", "-k", "uvicorn.workers.UvicornWorker", "--timeout", "600", "--bind=0.0.0.0:8000", "backend.app:app"]
-'@ | Out-File -FilePath .\Dockerfile -Encoding utf8NoBOM
