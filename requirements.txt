@@ -9,21 +9,16 @@ torch==2.12.1+cpu
 torchvision==0.27.1+cpu
 
 timm
-
 opencv-python-headless==4.10.0.84
 Pillow
-
 albumentations==1.4.0
 grad-cam==1.5.4
 
 sentence-transformers
 faiss-cpu
-
 groq
-
 python-dotenv
 python-multipart
-
 numpy
 pandas
 matplotlib
