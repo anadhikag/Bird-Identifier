@@ -53,7 +53,7 @@ jobs:
           action: "upload"
           app_location: "./frontend"
           api_location: ""
-          output_location: "build"
+          output_location: "dist"   # <-- change from "build" to "dist"
           github_id_token: ${{ steps.idtoken.outputs.result }}
           skip_app_build: true
 
