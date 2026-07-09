@@ -1,6 +1,7 @@
 name: Build and Deploy Backend to Azure Container Apps
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
     paths:
