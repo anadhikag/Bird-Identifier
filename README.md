@@ -1,20 +1,14 @@
 # Bird Identification Assistant
 
-> An end-to-end AI-powered bird identification and ecological information system using Computer Vision, Retrieval-Augmented Generation (RAG), and Large Language Models.
+> An end-to-end AI-powered bird identification and ecological information system using Computer Vision, Retrieval-Augmented Generation (RAG), and LLMs.
 
 ---
 
 ## Overview
 
-Bird Identification Assistant is a multimodal AI application that identifies bird species from photographs and generates reliable ecological information using Retrieval-Augmented Generation (RAG) and Google's Gemini.
+Bird Identification Assistant is a multimodal AI application that identifies bird species from photographs and generates reliable ecological information using Retrieval-Augmented Generation (RAG) and Groq (qwen3-32b).
 
 Unlike traditional image classifiers that only predict a label, this project combines modern Computer Vision and Generative AI to create an interactive bird ecology assistant.
-
-The project is being developed in three stages:
-
-- **Stage 1:** Computer Vision + RAG + Streamlit
-- **Stage 2:** FastAPI backend + React frontend
-- **Stage 3:** Cloud deployment on Microsoft Azure
 
 ---
 
@@ -43,7 +37,7 @@ The project is being developed in three stages:
 
 ### Large Language Model
 
-Google Gemini 2.5 Flash generates:
+Groq (qwen3-32b) generates:
 
 - Ecological descriptions
 - Habitat information
@@ -57,9 +51,6 @@ Google Gemini 2.5 Flash generates:
 
 ```text
 Image
-   │
-   ▼
-Bird Detection (YOLOv8)
    │
    ▼
 Crop Bird
@@ -77,8 +68,7 @@ Knowledge Retrieval (FAISS)
 Prompt Engineering
    │
    ▼
-Gemini 2.5 Flash
-   │
+qwen3-32b   
    ▼
 Ecological Report + Chat
 ```
@@ -103,14 +93,6 @@ Contains:
 
 ---
 
-## Bird Detection 
-
-Dataset:
-
-- Open Images V7 (Bird class)
-
----
-
 # Technology Stack
 
 ## Computer Vision
@@ -118,19 +100,18 @@ Dataset:
 - PyTorch
 - torchvision
 - EfficientNetV2-S
-- YOLOv8
 - OpenCV
 
 ## NLP / RAG
 
 - Sentence Transformers
 - FAISS
-- Google Gemini 2.5 Flash
+- qwen3-32b
 
 ## Frontend
 
-- Streamlit (Stage 1)
-- React + Vite (Stage 2)
+- React + Vite
+- Framer
 
 ## Backend
 
